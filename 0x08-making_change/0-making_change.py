@@ -12,6 +12,9 @@ def makeChange(coins, total):
 
     if total <= 0:
         return 0
+    if not coins or coins is None:
+        return -1
+
     n = len(coins)
     minCoin = []
 
