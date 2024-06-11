@@ -11,7 +11,7 @@ def makeChange(coins, total):
     """
     if total <= 0:
         return 0
-    nextCoin = [amount + 1] * (amount + 1)
+    nextCoin = [total + 1] * (total + 1)
     nextCoin[0] = 0
 
     for i in range(1, total + 1):
