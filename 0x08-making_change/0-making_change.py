@@ -9,8 +9,6 @@ def makeChange(coins, total):
         code to make change breaking the problem
         into subproblems and caching them with DP
     """
-    if total <= 0:
-        return 0
     nextCoin = [sys.maxsize for i in range(total + 1)]
     nextCoin[0] = 0
 
