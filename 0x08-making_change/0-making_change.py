@@ -21,7 +21,7 @@ def makeChange(coins, total):
                 if smallCoin != sys.maxsize and smallCoin + 1 < nextCoin[i]:
                     nextCoin[i] = smallCoin + 1
 
-    if nextCoin[total] > total:
+    if nextCoin[total] == sys.maxsize:
         return -1
     else:
         return nextCoin[total]
