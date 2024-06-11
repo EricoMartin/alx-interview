@@ -9,7 +9,7 @@ def makeChange(coins, total):
         code to make change breaking the problem
         into subproblems and caching them with DP
     """
-    
+
     if total <= 0:
         return 0
     n = len(coins)
@@ -23,7 +23,7 @@ def makeChange(coins, total):
             minCoin.append(coins[i])
         i -= 1
     return len(minCoin)
-    
+
     ''' if total <= 0:
         return 0
     nextCoin = [total + 1] * (total + 1)
