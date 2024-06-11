@@ -6,10 +6,10 @@
 
 def makeChange(coins, total):
     """ main code """
-    if (total >= 1):
-        return changeCoin(coins, total, [0] * total + 1)
-    else:
+    if (total < 1):
         return 0
+
+    return changeCoin(coins, total, [0] * (total + 1))
 
 
 def changeCoin(coins, total, nextCoin):
