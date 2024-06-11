@@ -25,6 +25,8 @@ def makeChange(coins, total):
             total -= coins[i]
             minCoin.append(coins[i])
         i -= 1
+        if total == 0:
+            return 0
     return len(minCoin)
 
     ''' if total <= 0:
