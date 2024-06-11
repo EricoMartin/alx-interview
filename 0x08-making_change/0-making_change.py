@@ -21,4 +21,5 @@ def makeChange(coins, total):
 
     if nextCoin[total] > total:
         return -1
-    return nextCoin[total]
+    else:
+        return nextCoin[total]
