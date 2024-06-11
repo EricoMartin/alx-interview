@@ -15,18 +15,14 @@ def makeChange(coins, total):
     if not coins or coins is None:
         return -1
 
-    n = len(coins)
     minCoin = []
 
-    i = n - 1
-    while(i >= 0):
+    coins = sorted(coins)[::-1]
+    for coin in coins:
 
-        while(total >= coins[i]):
-            total -= coins[i]
-            minCoin.append(coins[i])
-        i -= 1
-        if total == 0:
-            return 0
+        while(total >= coin):
+            total -= coins
+            minCoin.append(coins)
     return len(minCoin)
 
     ''' if total <= 0:
