@@ -31,7 +31,7 @@ def changeCoin(coins, total, nextCoin):
     for coin in coins:
         change = changeCoin(coins, total - coin, nextCoin)
         if (change >= 0 and change < minim):
-            minim = change + 1
+            minim = 1 + change
 
     if (minim == sys.maxsize):
         nextCoin[total] = -1
