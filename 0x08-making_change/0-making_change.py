@@ -21,7 +21,7 @@ def makeChange(coins, total):
     for coin in coins:
 
         while(total >= coin):
-            total -= coins
+            total -= coin
             minCoin += 1
         if (total == 0):
             return minCoin
