@@ -5,16 +5,14 @@
 
 
 def findPrimes(n):
-    if n == 1 or n == 0 or (n % 2 == 0 and n > 2):
-        return None
-
+    
     primeList = [True] * (n + 1)
     p = 2
 
     while (p * p <= n):
         if primeList[p] is True:
             for i in range(p * p, n + 1, p):
-                primeList[p] = False
+                primeList[i] = False
 
         p += 1
 
