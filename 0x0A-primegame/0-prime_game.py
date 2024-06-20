@@ -43,7 +43,7 @@ def simulateGame(x, n):
 def isWinner(x, nums):
     ''' Find winner of the game '''
 
-    if not nums or x <= 0:
+    if not nums or x <= 1:
         return None
 
     numMax = max(nums)
