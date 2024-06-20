@@ -5,7 +5,7 @@
 
 
 def findPrimes(n):
-    
+
     primeList = [True] * (n + 1)
     p = 2
 
