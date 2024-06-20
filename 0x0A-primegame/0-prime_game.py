@@ -9,7 +9,7 @@ def findPrimes(n):
     primeList = [True] * (n + 1)
     p = 2
 
-    while (p * p <= n+1):
+    while (p * p <= n):
         if primeList[p]:
             for i in range(p * p, n + 1, p):
                 primeList[p] = False
