@@ -10,7 +10,7 @@ def findPrimes(n):
     p = 2
 
     while (p * p <= n):
-        if primeList[p]:
+        if primeList[p] is True:
             for i in range(p * p, n + 1, p):
                 primeList[p] = False
 
@@ -56,7 +56,7 @@ def isWinner(x, nums):
 
         if gameWinner == 'Maria':
             maria += 1
-        elif gameWinner == 'Ben':
+        else:
             ben += 1
 
     if maria > ben:
